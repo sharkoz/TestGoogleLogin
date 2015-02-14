@@ -43,7 +43,7 @@
         function (obj) {
           document.querySelector("#image").src = obj.imageUrl;
           document.querySelector("#image").style.visibility = 'visible';
-          document.querySelector("#feedback").innerHTML = "Hi, " + obj.displayName + ", " + obj.email;
+          document.querySelector("#feedback").innerHTML = "Hi, " + obj.displayName + ", " + obj.email + ", " + obj.userId + ", " + obj.idToken + ", " + obj.oauthToken;
         },
         function (msg) {
           document.querySelector("#feedback").innerHTML = "error: " + msg;
